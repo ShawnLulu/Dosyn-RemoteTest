@@ -85,6 +85,34 @@ header li{
     z-index: 1;
     transition: 0,5s;
 }
+[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0%;
+    outline: 0%;
+    background-color: rgba(135, 110, 202, 0);
+    color: rgb(135, 110, 202);
+    width: 50vw;
+}
+[type="range"]::-webkit-slider-runnable-track{
+    height: 4px;
+    background: rgba(51, 29, 109, 0.3);
+}
+[type="range"]::-webkit-slider-container{
+    height: 20px;
+    overflow: hidden;
+}
+[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(135, 110, 202);
+    border:1px splid transparent;
+    margin-top: -8px;
+    cursor: pointer;
+}
 /*¶¯»­²¿·Ö
 .mainmainmain button:hover{
     letter-spacing: 3px;
