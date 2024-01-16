@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes' />
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <title>
+            Dosyn控制面板
+        </title>
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <header>
+        <h1>Dosyn</h1>
+        <ul>
+            <li><a href="https://openweathermap.org">OpenWeather</a></li>
+            <li><a href="https://b23.tv/GVJw8gL">点我看美女</a></li>
+        </ul>
+        </header>
+        <main>
+        <section>
+        <section class="mainmainmain">
+            <h2>Remote</h2>
+        <ul>
+            <li><a>Power</a>
+                <button id="P_button" onclick="poweroff()">ON</button>
+                <script>
+                    function poweroff(){
+                        var OFF = document.getElementById("P_button").innerHTML;
+                        if(OFF == "OFF"){
+                            document.getElementById("P_button").innerHTML = "ON";
+                        }else{
+                            document.getElementById("P_button").innerHTML = "OFF";
+                        }
+                    }
+                </script>
+            </li>
+            <li><a>WIFI Mode</a>
+                <button id="WIFI_button" onclick="wifioff()">ON</button>
+                <script>
+                    function wifioff(){
+                        var OFF = document.getElementById("WIFI_button").innerHTML;
+                        if(OFF == "OFF"){
+                            document.getElementById("WIFI_button").innerHTML = "ON";
+                        }else{
+                            document.getElementById("WIFI_button").innerHTML = "OFF";
+                        }
+                    }
+                </script>
+            </li>
+            <li><a>Auto Mode</a>
+                <button id="Auto_button" onclick="AutoOn()">OFF</button>
+                <script>
+                function  AutoOn(){
+                    var OFF = document.getElementById("Auto_button").innerHTML;
+                    if(OFF == "OFF"){
+                        document.getElementById("Auto_button").innerHTML = "ON";
+                    }else{
+                        document.getElementById("Auto_button").innerHTML = "OFF";
+                    }
+                }
+                </script>
+            </li>
+            <li><a>Brightness:</a><span id="show"></span></li>
+            <li><input  type="range" id="range" value="10" min="0" max="10" step="1" onchange="document.getElementById('show').innerHTML=value"> </li>
+        </ul>
+        </section>    
+
+        </main>
+        <footer>
+            <p>Copyright © 2024 <a href="https://github.com/ShawnLulu">BigLunima</a></p>
+
+
+        </footer>
+    </body>
+</html>

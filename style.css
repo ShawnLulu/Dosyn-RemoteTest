@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    background-color: rgb(27, 27, 27);
+    height: 80px;
+    width: 100%;
+}
+h1{
+    color:white;
+    position: absolute;
+    left:5vw;
+    top:0;
+    line-height: 80px;
+}
+header a{
+    color:white;
+    text-decoration: none;
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+
+.mainmainmain{
+    background-color: blanchedalmond;
+    color: white;
+    height: 95vh;
+    width: 100%;
+    background-image: url("https://gss0.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/ac4bd11373f082025f31436048fbfbedaa641bc9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mainmainmain h2{
+    font-size: 50px;
+    position: absolute;
+    top: 100px;
+}
+.mainmainmain li{
+    margin-top: 5vh;
+}
+.mainmainmain a{
+    left: 15vw;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.mainmainmain button{
+    background-color: rgb(176, 165, 204);
+}
+
+footer{
+    background-color: rgb(27, 27, 27 );
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color:white;
+    text-decoration: none;
+}
+footer a{
+    color:rgb(135, 110, 202);
+}
