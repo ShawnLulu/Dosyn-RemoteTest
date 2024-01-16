@@ -85,6 +85,7 @@ header li{
     z-index: 1;
     transition: 0,5s;
 }
+/*¶¯»­²¿·Ö
 .mainmainmain button:hover{
     letter-spacing: 3px;
 }
@@ -103,10 +104,13 @@ header li{
 .mainmainmain button:hover::before{
     transform: skewX(45deg) translateX(200px);
 }
+*/
 .mainmainmain span{
+    color: rgb(135, 110, 202);
     font-size: 35px;
+    position: relative;
+    left: 35px;
 }
-
 
 
 footer{
