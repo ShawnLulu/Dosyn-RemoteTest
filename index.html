@@ -21,8 +21,15 @@
         <section>
         <section class="mainmainmain">
             <h2>Remote</h2>
+        <div class="ulul">
         <ul>
-            <li><a>Power</a>
+            <li><a>Power</a></li>
+            <li><a>WIFI Mode</a></li>
+            <li><a>Auto Mode</a></li>
+            <li><a>Brightness :</a></li>
+        </ul>
+        <ul>
+            <li>   
                 <button id="P_button" onclick="poweroff()">ON</button>
                 <script>
                     function poweroff(){
@@ -33,9 +40,9 @@
                             document.getElementById("P_button").innerHTML = "OFF";
                         }
                     }
-                </script>
-            </li>
-            <li><a>WIFI Mode</a>
+                </script>  
+            </li> 
+            <li> 
                 <button id="WIFI_button" onclick="wifioff()">ON</button>
                 <script>
                     function wifioff(){
@@ -48,7 +55,7 @@
                     }
                 </script>
             </li>
-            <li><a>Auto Mode</a>
+            <li>    
                 <button id="Auto_button" onclick="AutoOn()">OFF</button>
                 <script>
                 function  AutoOn(){
@@ -61,9 +68,10 @@
                 }
                 </script>
             </li>
-            <li><a>Brightness:</a><span id="show"></span></li>
-            <li><input  type="range" id="range" value="10" min="0" max="10" step="1" onchange="document.getElementById('show').innerHTML=value"> </li>
+            <li><span id="show"></span></li>
         </ul>
+        </div>
+        <input  type="range" id="range" value="10" min="0" max="10" step="1" onchange="document.getElementById('show').innerHTML=value">
         </section>    
 
         </main>

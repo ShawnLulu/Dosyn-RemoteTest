@@ -29,6 +29,10 @@ header li{
     margin-right: 4vw;
 }
 
+
+
+
+
 .mainmainmain{
     background-color: blanchedalmond;
     color: white;
@@ -48,18 +52,62 @@ header li{
     position: absolute;
     top: 100px;
 }
-.mainmainmain li{
-    margin-top: 5vh;
+
+.ulul{
+    display: flex;
 }
+.ulul ul{
+    margin-right: 10vw;
+    line-height: 50px;
+    list-style-type: none;
+}
+
 .mainmainmain a{
-    left: 15vw;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
 }
 .mainmainmain button{
-    background-color: rgb(176, 165, 204);
+    font-size: 20px;
+    width: 100px;
+    height: 40px;    
+    background-color: rgb(255, 255, 255,0.05);
+    color: #fff;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgb(255, 255, 255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    font-weight: 400px;
+    z-index: 1;
+    transition: 0,5s;
 }
+.mainmainmain button:hover{
+    letter-spacing: 3px;
+}
+.mainmainmain button:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: rgba(255, 255, 255,0.5);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.mainmainmain button:hover::before{
+    transform: skewX(45deg) translateX(200px);
+}
+.mainmainmain span{
+    font-size: 35px;
+}
+
+
 
 footer{
     background-color: rgb(27, 27, 27 );
